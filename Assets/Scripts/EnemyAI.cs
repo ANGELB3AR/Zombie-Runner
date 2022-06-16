@@ -50,7 +50,7 @@ public class EnemyAI : MonoBehaviour
 
     void AttackTarget()
     {
-        Debug.Log("Attacking player");
+        Debug.Log($"{name} has seeked and is destroying {target.name}");
     }
 
     void OnDrawGizmosSelected()
