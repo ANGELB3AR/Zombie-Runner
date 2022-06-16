@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera firstPersonCamera;
     [SerializeField] float fireRange = 100f;
-    [SerializeField] float damagePerHit = 5;
+    [SerializeField] float damagePerHit = 30f;
 
     void Update()
     {
@@ -24,6 +24,7 @@ public class Weapon : MonoBehaviour
             Debug.Log($"I hit: {hit.transform.name}");
             // TODO: Add some hit effect for visual feedback
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            if (target == null) return;
             target.TakeDamage(damagePerHit);
         }
         else return;
