@@ -430,6 +430,7 @@ MonoBehaviour:
   fireRange: 100
   damagePerHit: 5
   muzzleFlash: {fileID: 7485249506926522773}
+  hitEffect: {fileID: 4872539019234665739, guid: 55afcf31a957fd44eac97eaeb896b131, type: 3}
 --- !u!198 &7485249506926522773 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5450286200138825945, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
