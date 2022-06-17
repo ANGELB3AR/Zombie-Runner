@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4872539019216026725}
   - component: {fileID: 4872539019215914437}
   m_Layer: 0
-  m_Name: Shower
+  m_Name: ImpactSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
