@@ -35,7 +35,7 @@ public class Weapon : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(firstPersonCamera.transform.position, firstPersonCamera.transform.forward, out hit, fireRange))
         {
-            CreateHitImpact(hit);
+            CreateImpactEffect(hit);
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             if (target == null) return;
             target.TakeDamage(damagePerHit);
@@ -43,7 +43,7 @@ public class Weapon : MonoBehaviour
         else return;
     }
 
-    void CreateHitImpact(RaycastHit hit)
+    void CreateImpactEffect(RaycastHit hit)
     {
         GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(impact, .1f);
