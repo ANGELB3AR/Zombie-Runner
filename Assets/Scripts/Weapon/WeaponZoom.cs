@@ -32,7 +32,12 @@ public class WeaponZoom : MonoBehaviour
             }
         }
     }
-    
+
+    void OnDisable()
+    {
+        ZoomOut();
+    }
+
     void ZoomIn()
     {
         mainCamera.fieldOfView = zoomedInFOV;
