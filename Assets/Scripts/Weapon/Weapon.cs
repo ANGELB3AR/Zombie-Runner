@@ -6,13 +6,19 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera firstPersonCamera;
+
+    [Header("General Settings")]
     [SerializeField] float fireRange = 100f;
     [SerializeField] float damagePerHit = 30f;
-    [SerializeField] ParticleSystem muzzleFlash;
-    [SerializeField] GameObject hitEffect;
+    [SerializeField] float shootDelayTime = 1f;
+
+    [Header("Ammo")]
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
-    [SerializeField] float shootDelayTime = 1f;
+
+    [Header("Effects")]
+    [SerializeField] ParticleSystem muzzleFlash;
+    [SerializeField] GameObject hitEffect;
 
     bool readyToShoot = true;
 
