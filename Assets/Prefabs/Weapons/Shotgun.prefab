@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPersonCamera: {fileID: 0}
-  fireRange: 50
+  fireRange: 35
   damagePerHit: 50
   muzzleFlash: {fileID: 3700173901247562359}
   hitEffect: {fileID: 4872539019234665739, guid: 55afcf31a957fd44eac97eaeb896b131, type: 3}
