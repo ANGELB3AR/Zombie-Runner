@@ -9,5 +9,6 @@ public class Pickups : MonoBehaviour
         if (other.name != "Player") { return; }
 
         Debug.Log("Picked up");
+        Destroy(gameObject);
     }
 }
