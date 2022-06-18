@@ -4143,6 +4143,14 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 2064386213}
+    - target: {fileID: 3966089848169146108, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
+      propertyPath: zoomedInSensitivity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966089848169146108, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
+      propertyPath: zoomedOutSensitivity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7245466691054047605, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
       propertyPath: m_RootOrder
       value: 0
