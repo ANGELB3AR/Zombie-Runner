@@ -384,11 +384,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPersonCamera: {fileID: 0}
-  fireRange: 100
-  damagePerHit: 20
+  fireRange: 50
+  damagePerHit: 50
   muzzleFlash: {fileID: 3700173901247562359}
   hitEffect: {fileID: 4872539019234665739, guid: 55afcf31a957fd44eac97eaeb896b131, type: 3}
   ammoSlot: {fileID: 0}
+  shootDelayTime: 3
 --- !u!1 &6382746859851520298
 GameObject:
   m_ObjectHideFlags: 0

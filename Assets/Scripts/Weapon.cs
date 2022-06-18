@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0))
         {
             Shoot();
         }
@@ -30,6 +30,7 @@ public class Weapon : MonoBehaviour
         ammoSlot.DecreaseAmmo();
         PlayMuzzleFlash();
         ProcessRaycast();
+
         readyToShoot = false;
         StartCoroutine(ShootDelay());
     }
