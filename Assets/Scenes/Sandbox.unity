@@ -2493,6 +2493,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1536364949}
+    - target: {fileID: 4281075847533956056, guid: d7e989706f1c6cc4e89caeec1b122cf6, type: 3}
+      propertyPath: turnSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4281075847533956063, guid: d7e989706f1c6cc4e89caeec1b122cf6, type: 3}
       propertyPath: m_RootOrder
       value: 3
