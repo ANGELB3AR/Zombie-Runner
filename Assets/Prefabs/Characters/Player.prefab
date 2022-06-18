@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 7245466691060660403}
   - component: {fileID: 4371387002356653622}
   - component: {fileID: 1476727502814489423}
-  - component: {fileID: 3966089848169146108}
   - component: {fileID: 746908869535312312}
   m_Layer: 0
   m_Name: Player
@@ -198,23 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &3966089848169146108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7245466691054079313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3532dd40728a81f458dd8f4b0e9eb6a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 7245466691053490039}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomedInSensitivity: 0.5
-  zoomedOutSensitivity: 2
 --- !u!114 &746908869535312312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +522,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
+--- !u!1 &7539124360683495741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6382746859851520296, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
+  m_PrefabInstance: {fileID: 3473484615853291541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1595287820414732947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7539124360683495741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3532dd40728a81f458dd8f4b0e9eb6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 7245466691053490039}
+  fpsController: {fileID: 7245466691060660403}
+  zoomedOutFOV: 60
+  zoomedInFOV: 20
+  zoomedInSensitivity: 1
+  zoomedOutSensitivity: 2
 --- !u!4 &7539124360683928861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6382746859851941128, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
@@ -557,6 +562,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 746908869535312312}
     - target: {fileID: 6105010050211148115, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
+      propertyPath: shootDelayTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105010050211148115, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
       propertyPath: firstPersonCamera
       value: 
       objectReference: {fileID: 7245466691053490039}
@@ -566,7 +575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6382746859851520296, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6382746859851941128, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
       propertyPath: m_RootOrder
