@@ -23,6 +23,11 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        readyToShoot = true;
+    }
+
     void Shoot()
     {
         if (ammoSlot.GetCurrentAmmo() <= 0 || !readyToShoot) { return; }
