@@ -19,7 +19,7 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Shoot();
+            //Shoot();
         }
     }
 
@@ -28,17 +28,17 @@ public class Weapon : MonoBehaviour
         readyToShoot = true;
     }
 
-    void Shoot()
-    {
-        if (ammoSlot.GetCurrentAmmo() <= 0 || !readyToShoot) { return; }
+    //void Shoot()
+    //{
+    //    if (ammoSlot.GetCurrentAmmo() <= 0 || !readyToShoot) { return; }
 
-        ammoSlot.DecreaseAmmo();
-        PlayMuzzleFlash();
-        ProcessRaycast();
+    //    ammoSlot.DecreaseAmmo();
+    //    PlayMuzzleFlash();
+    //    ProcessRaycast();
 
-        readyToShoot = false;
-        StartCoroutine(ShootDelay());
-    }
+    //    readyToShoot = false;
+    //    StartCoroutine(ShootDelay());
+    //}
 
     void PlayMuzzleFlash()
     {
