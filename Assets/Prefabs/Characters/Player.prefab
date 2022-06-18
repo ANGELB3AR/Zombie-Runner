@@ -29,8 +29,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5611874270623831537}
-  - {fileID: 7539124360683928861}
   - {fileID: 7136113206140964727}
+  - {fileID: 7539124360683928861}
   m_Father: {fileID: 7245466691054047607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -474,7 +474,7 @@ PrefabInstance:
       objectReference: {fileID: 7245466691053490039}
     - target: {fileID: 6382746859851520296, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
       propertyPath: m_Name
-      value: Carbine
+      value: Sniper
       objectReference: {fileID: 0}
     - target: {fileID: 6382746859851520296, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
       propertyPath: m_IsActive
@@ -482,7 +482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6382746859851941128, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6382746859851941128, guid: 670ff7f4fc30acc4eb4e99f190b6d63c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -573,9 +573,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 6382746859851520296, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6382746859851941128, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6382746859851941128, guid: ba8984ee24776db4ba7201dc8cb07b88, type: 3}
       propertyPath: m_LocalPosition.x
