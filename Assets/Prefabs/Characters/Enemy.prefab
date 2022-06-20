@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4281075847533956056}
   - component: {fileID: 8440248914263402464}
   - component: {fileID: 3885298990302624266}
+  - component: {fileID: 4281075848231925550}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -136,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   chaseRange: 10.25
-  turnSpeed: 5
+  turnSpeed: 15
 --- !u!114 &8440248914263402464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +165,19 @@ CapsuleCollider:
   m_Height: 1.84
   m_Direction: 1
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &4281075848231925550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281075847533956034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12d48c60281d9b4981a5499309b67d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 40
 --- !u!1001 &7717822279497100850
 PrefabInstance:
   m_ObjectHideFlags: 0
