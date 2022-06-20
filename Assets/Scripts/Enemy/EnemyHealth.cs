@@ -6,6 +6,13 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
 
+    Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void TakeDamage(float damageAmount)
     {
         BroadcastMessage("OnDamageTaken");
@@ -19,6 +26,6 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        animator.SetTrigger("die");
     }
 }
