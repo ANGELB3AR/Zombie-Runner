@@ -6,12 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
 
-    Animator animator;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    bool isDead = false;
+    public bool IsDead { get { return isDead; } }
 
     public void TakeDamage(float damageAmount)
     {
@@ -26,6 +22,9 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
-        animator.SetTrigger("die");
+        if (isDead) { return; }
+
+        isDead = true;
+        GetComponent<Animator>().SetTrigger("die");
     }
 }
