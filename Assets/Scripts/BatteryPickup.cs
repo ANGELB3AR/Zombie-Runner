@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class BatteryPickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] float flashlightAngle = 70f;
+    [SerializeField] float flashlightIntensity = 4f;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.name != "Player") { return; }
+
+        other.GetComponentInChildren<FlashlightSystem>().RestoreLightAngle(flashlightAngle);
+        other.GetComponentInChildren<FlashlightSystem>().RestoreLightIntensity(flashlightIntensity);
+        Destroy(gameObject);
     }
 }
