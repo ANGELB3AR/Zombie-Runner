@@ -53048,6 +53048,10 @@ PrefabInstance:
       propertyPath: bloodSplatterCanvas
       value: 
       objectReference: {fileID: 162013254670728750}
+    - target: {fileID: 1287595740, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
+      propertyPath: bloodSplatterEffectTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1476727502814489423, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
       propertyPath: gameOverCanvas
       value: 
