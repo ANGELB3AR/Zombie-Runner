@@ -8,19 +8,19 @@ public class DisplayDamage : MonoBehaviour
     [SerializeField] Canvas bloodSplatterCanvas;
     [SerializeField] float bloodSplatterEffectTime = 1f;
 
-    public void DisplayBloodSplatter()
+    void Start()
     {
-        Debug.Log("blood splatter canvaas");
-        bloodSplatterCanvas.enabled = true;
+        bloodSplatterCanvas.enabled = false;
     }
 
-    void OnEnable()
+    public void DisplayBloodSplatter()
     {
         StartCoroutine(BloodSplatterTimer());
     }
 
     IEnumerator BloodSplatterTimer()
     {
+        bloodSplatterCanvas.enabled = true;
         yield return new WaitForSeconds(bloodSplatterEffectTime);
         bloodSplatterCanvas.enabled = false;
     }
