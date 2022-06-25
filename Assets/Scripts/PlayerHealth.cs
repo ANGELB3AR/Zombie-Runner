@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     {
         hitPoints -= damageAmount;
 
+        GetComponent<DisplayDamage>().DisplayBloodSplatter();
+
         if (hitPoints <= 0)
         {
             Die();

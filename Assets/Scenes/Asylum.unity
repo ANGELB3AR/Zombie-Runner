@@ -52807,12 +52807,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 866440829}
-    - target: {fileID: 3113808035000389034, guid: 16d12cedb053c964299c28df46655925, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d12cedb053c964299c28df46655925, type: 3}
+--- !u!223 &162013254670728750 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8031104877130776268, guid: 16d12cedb053c964299c28df46655925, type: 3}
+  m_PrefabInstance: {fileID: 162013254670728749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &297072519381889237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53011,6 +53012,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1287595740, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
+      propertyPath: bloodSplatterCanvas
+      value: 
+      objectReference: {fileID: 162013254670728750}
     - target: {fileID: 1476727502814489423, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
       propertyPath: gameOverCanvas
       value: 
