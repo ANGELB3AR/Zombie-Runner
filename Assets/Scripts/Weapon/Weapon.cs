@@ -21,6 +21,7 @@ public class Weapon : MonoBehaviour
     [Header("Effects")]
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] AudioSource gunshotSFX;
 
     bool readyToShoot = true;
 
@@ -48,6 +49,7 @@ public class Weapon : MonoBehaviour
         if (ammoSlot.GetCurrentAmmo(ammoType) <= 0 || !readyToShoot) { return; }
 
         ammoSlot.DecreaseAmmo(ammoType);
+        gunshotSFX.Play();
         PlayMuzzleFlash();
         ProcessRaycast();
 
