@@ -34,13 +34,7 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (health.IsDead)
-        {
-            StopPlayingAudio();
-            dieSFX.Play();
-            navMeshAgent.enabled = false;
-            enabled = false;
-        }
+        if (health.IsDead) { return; }
 
         distanceToTarget = Vector3.Distance(target.position, transform.position);
 
@@ -57,6 +51,15 @@ public class EnemyAI : MonoBehaviour
     public void OnDamageTaken()
     {
         isProvoked = true;
+
+        if (health.IsDead)
+        {
+            StopPlayingAudio();
+            dieSFX.Play();
+            navMeshAgent.enabled = false;
+            enabled = false;
+            isProvoked = false;
+        }
     }
 
     void EngageTarget()
@@ -74,7 +77,6 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseTarget()
     {
-        StopPlayingAudio();
         chaseGrowlSFX.Play();
         animator.SetBool("attack", false);
         animator.SetTrigger("move");
@@ -83,7 +85,6 @@ public class EnemyAI : MonoBehaviour
 
     void AttackTarget()
     {
-        StopPlayingAudio();
         attackSFX.Play();
         animator.SetBool("attack", true);
     }
