@@ -36,6 +36,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (health.IsDead)
         {
+            StopPlayingAudio();
             dieSFX.Play();
             navMeshAgent.enabled = false;
             enabled = false;
@@ -73,6 +74,7 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseTarget()
     {
+        StopPlayingAudio();
         chaseGrowlSFX.Play();
         animator.SetBool("attack", false);
         animator.SetTrigger("move");
@@ -81,6 +83,7 @@ public class EnemyAI : MonoBehaviour
 
     void AttackTarget()
     {
+        StopPlayingAudio();
         attackSFX.Play();
         animator.SetBool("attack", true);
     }
@@ -96,5 +99,12 @@ public class EnemyAI : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
+    }
+
+    void StopPlayingAudio()
+    {
+        idleGrowlSFX.Stop();
+        chaseGrowlSFX.Stop();
+        attackSFX.Stop();
     }
 }
