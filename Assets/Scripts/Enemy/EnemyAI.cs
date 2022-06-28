@@ -5,8 +5,15 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    [Header("General Settings")]
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
+
+    [Header("Sound Effects")]
+    [SerializeField] AudioSource idleGrowlSFX;
+    [SerializeField] AudioSource chaseGrowlSFX;
+    [SerializeField] AudioSource attackSFX;
+    [SerializeField] AudioSource dieSFX;
 
     NavMeshAgent navMeshAgent;
     Animator animator;
@@ -21,14 +28,17 @@ public class EnemyAI : MonoBehaviour
         animator = GetComponent<Animator>();
         health = GetComponent<EnemyHealth>();
         target = FindObjectOfType<PlayerHealth>().transform;
+
+        idleGrowlSFX.Play();
     }
 
     void Update()
     {
         if (health.IsDead)
         {
-            enabled = false;
+            dieSFX.Play();
             navMeshAgent.enabled = false;
+            enabled = false;
         }
 
         distanceToTarget = Vector3.Distance(target.position, transform.position);
@@ -63,6 +73,7 @@ public class EnemyAI : MonoBehaviour
 
     void ChaseTarget()
     {
+        chaseGrowlSFX.Play();
         animator.SetBool("attack", false);
         animator.SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
@@ -70,6 +81,7 @@ public class EnemyAI : MonoBehaviour
 
     void AttackTarget()
     {
+        attackSFX.Play();
         animator.SetBool("attack", true);
     }
 
