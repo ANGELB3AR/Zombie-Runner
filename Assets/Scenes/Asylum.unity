@@ -50259,7 +50259,7 @@ PrefabInstance:
       objectReference: {fileID: 1725162598}
     - target: {fileID: 1351945868285275359, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_VersionIndex
-      value: 2066
+      value: 2069
       objectReference: {fileID: 0}
     - target: {fileID: 2973735773494083488, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_Mesh
@@ -50275,7 +50275,7 @@ PrefabInstance:
       objectReference: {fileID: 2146761503}
     - target: {fileID: 2973735773494083500, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_VersionIndex
-      value: 2069
+      value: 2072
       objectReference: {fileID: 0}
     - target: {fileID: 3250516699380357570, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_Mesh
@@ -50291,7 +50291,7 @@ PrefabInstance:
       objectReference: {fileID: 1096127377}
     - target: {fileID: 3250516699380357582, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_VersionIndex
-      value: 2063
+      value: 2066
       objectReference: {fileID: 0}
     - target: {fileID: 6670215352277526581, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_RootOrder
@@ -52817,10 +52817,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 162013253747193487, guid: 16d12cedb053c964299c28df46655925, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 162013254173269873, guid: 16d12cedb053c964299c28df46655925, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -52885,10 +52881,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 866440829}
-    - target: {fileID: 6509040923660142677, guid: 16d12cedb053c964299c28df46655925, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d12cedb053c964299c28df46655925, type: 3}
 --- !u!223 &162013254670728750 stripped
@@ -52917,7 +52909,7 @@ PrefabInstance:
       objectReference: {fileID: 924948551}
     - target: {fileID: 1351945868285275359, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_VersionIndex
-      value: 2069
+      value: 2072
       objectReference: {fileID: 0}
     - target: {fileID: 2973735773494083488, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_Mesh
@@ -52933,7 +52925,7 @@ PrefabInstance:
       objectReference: {fileID: 957842194}
     - target: {fileID: 2973735773494083500, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_VersionIndex
-      value: 2072
+      value: 2075
       objectReference: {fileID: 0}
     - target: {fileID: 3250516699380357570, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_Mesh
@@ -52949,7 +52941,7 @@ PrefabInstance:
       objectReference: {fileID: 1044785570}
     - target: {fileID: 3250516699380357582, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_VersionIndex
-      value: 2066
+      value: 2069
       objectReference: {fileID: 0}
     - target: {fileID: 6670215352277526581, guid: 5302335a4828475448a319acf50431cc, type: 3}
       propertyPath: m_RootOrder
@@ -53098,10 +53090,6 @@ PrefabInstance:
       propertyPath: bloodSplatterCanvas
       value: 
       objectReference: {fileID: 162013254670728750}
-    - target: {fileID: 1287595740, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
-      propertyPath: bloodSplatterEffectTime
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1476727502814489423, guid: bdd199af704bb3f48adc452f168b6a95, type: 3}
       propertyPath: gameOverCanvas
       value: 

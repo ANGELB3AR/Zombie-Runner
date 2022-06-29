@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ammo : MonoBehaviour
 {
     [SerializeField] AmmoSlot[] ammoSlots;
+    [SerializeField] AudioSource ammoPickupSFX;
     
     [System.Serializable]
     private class AmmoSlot
@@ -23,6 +24,7 @@ public class Ammo : MonoBehaviour
     {
         AmmoSlot slot = GetAmmoSlot(ammoType);
         slot.ammoAmount += ammoAmount;
+        ammoPickupSFX.Play();
     }
 
     public void DecreaseAmmo(AmmoType ammoType)
