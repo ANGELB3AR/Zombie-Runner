@@ -10748,6 +10748,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4477030707949804, guid: 00debf980412c49418327c56a1a60db0, type: 3}
   m_PrefabInstance: {fileID: 1455334958}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &461792085 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1917955965546976848, guid: 16d12cedb053c964299c28df46655925, type: 3}
+  m_PrefabInstance: {fileID: 162013254670728749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &462411449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14318,7 +14323,7 @@ PrefabInstance:
     - target: {fileID: 8889253737195417798, guid: 05209b2d30e6ab24c918d692709d9606, type: 3}
       propertyPath: gameWinCanvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 461792085}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05209b2d30e6ab24c918d692709d9606, type: 3}
 --- !u!1001 &606449359
