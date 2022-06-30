@@ -52945,6 +52945,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1935266815, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_fontSize
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935266815, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_margin.w
+      value: -40.1368
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935266815, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_margin.x
+      value: -67.004456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935266815, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135722244, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 162013253229468356, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 162013253747193487, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 162013254173269873, guid: 16d12cedb053c964299c28df46655925, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -53001,10 +53029,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 866440829}
+    - target: {fileID: 162013254546735239, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 92.727264
+      objectReference: {fileID: 0}
     - target: {fileID: 1813336612323669044, guid: 16d12cedb053c964299c28df46655925, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 866440829}
+    - target: {fileID: 3113808035000389034, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661444586828515803, guid: 16d12cedb053c964299c28df46655925, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6418046090884181782, guid: 16d12cedb053c964299c28df46655925, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
